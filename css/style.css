@@ -1,0 +1,325 @@
+/* header */
+.logo {
+    width: 160px
+} 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    background-color: #ffffff;
+}
+.mobile-container {
+    display: none;
+}
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .topnav a:hover {
+    background-color:silver;
+    color: white;
+  }
+.navigation a {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+ .navigation {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: inline-block;
+} 
+.content {
+  display: none;
+  position: absolute;
+  top: 26px;
+  padding: 12px 0 11px;
+  background-color: #ffffff;
+  min-width: 225px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.content2 {
+    right: 20px;
+}
+.content a {
+  color: black;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-end;
+  text-transform: capitalize;
+  padding: 12px 5px;
+  text-decoration: none;
+}
+.content a::before{
+    content: "";
+    display: inline-block;
+    font-size:15px;
+    background: url("../img/arrow_forward-24px.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.content a:hover {background-color: #ddd; margin-left: 10px;}
+.content a:hover .content a::before {width: 25px;}
+.navigation:hover .content {display: block;}
+.navigation:hover .nav-a { border-bottom: 1px solid black;}
+
+/* section 1*/
+.banner {
+    background-image: url(../img/Interior-Design.jpg);
+    width: 100%;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner-text {
+    padding-left: 100px;
+}
+.banner-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 37px;
+}
+.banner-p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 11px;
+    max-width: 503px;
+    width: auto;
+    margin-top: 20px;
+}
+.btn {
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* section2 */
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2-title {
+    text-align: center;
+    margin-top: 65px;
+    font-size: 47px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400;
+}
+.section2-p{
+    margin-top: 20px;
+    text-align: center;
+    max-width: 603px;
+    color: darkgray;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+}
+.signature {
+    margin-top: 20px;
+}
+/* section3 */
+.left-block {
+    background-image: url(../img/Hexagon.png);
+    height: 492px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.right-block {
+    width: 100%;
+}
+.wraper-box {
+    margin-top: 53px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.div-wrap {
+    display: flex;
+}
+.text-box {
+    padding-left: 34px;
+    padding-right: 26px;
+    width: 50%;
+}
+.text-box-title {
+    margin-bottom: 29px;
+    margin-top: 30px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.text-box-p {
+    width: 246px;
+    color: darkgrey;
+    padding-right: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+}
+.photo1,
+.photo2,
+.photo3 {
+    height: 246px;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.photo1 {
+    background-image: url(../img/Unique.jpg);
+    background-position: center;
+}
+.photo2 {
+    background-image: url(../img/Slice.jpg);
+    background-position: top;
+}
+.photo3 {
+    background-image: url(../img/Accessori.jpg);
+    background-position: center;
+}
+.bottom-left-box {
+    width: 100%;
+}
+.section4 {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-right-box {
+    background-image: url(../img/mmmm.PNG);
+    height: 246px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%
+}
+
+/* footer */
+.footer {
+    padding: 45px;
+    background-color:#000000;
+}
+.footer-div-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.column {
+    display: flex;
+    flex-direction: column;  
+}
+
+.ftr {
+    width: 106px;
+    margin-left: 22px;
+    margin-top: 25px;
+}
+.ftr-p {
+    color: darkgray;
+    margin-top: 20px;
+    width: 167px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 22px;
+}
+.column-title {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.wht {
+    color: #ffffff;
+    margin-top:12px;
+    width: 157px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+.grey {
+    color: darkgray;
+    margin-top: 7px;
+    width: 121px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+}
+.first {
+    margin-top: 20px;
+}
+.input-div {
+    position: relative;
+}
+.input {
+    margin-top: 25px;
+    height: 41px;
+    width: 162px;
+    padding-left: 13px;
+}
+.btn-go {
+    position:absolute;
+    margin-top: 25px;
+    margin-left: -37px;
+    background-color: #48464a;
+    color: #ffff;
+    height: 41px;
+}
+.btn-go:focus,
+.input {
+    outline:none;
+}
